@@ -16,10 +16,17 @@ var filesToCache = [
   //--------------------------------------------------------------------------------------------------------------------
 
   // app files ---------------------------------------------------------------------------------------------------------
-  'page2.html',
+  'profile.html',
+  'shop.html',
+  'chat.html',
+  'hive.html',
   'css/index.css',
+  'css/shop.css',
+  'css/hive.css',
+  'css/chat.css',
   'css/styles.css',
-  'img/header.jpg',
+  'css/profile.css',
+  'img/profile-pic.jpg',
   'img/offline-img.png',
   'https://fonts.googleapis.com/css?family=Raleway'
   // -------------------------------------------------------------------------------------------------------------------
