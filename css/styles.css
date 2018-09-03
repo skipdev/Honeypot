@@ -24,7 +24,7 @@ body {
   font-size: 36px; }
 
 .nav-bar a:hover {
-  background-color: #000; }
+  background-color: black; }
 
 .active {
   background-color: #FADC4B; }

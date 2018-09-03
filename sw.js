@@ -28,7 +28,8 @@ var filesToCache = [
   'css/profile.css',
   'img/profile-pic.jpg',
   'img/offline-img.png',
-  'https://fonts.googleapis.com/css?family=Raleway'
+  'https://fonts.googleapis.com/css?family=Raleway',
+  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'
   // -------------------------------------------------------------------------------------------------------------------
 ];
 

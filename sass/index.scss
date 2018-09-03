@@ -1,4 +1,4 @@
-$color-yellow: #FADC4B;
+@import "variables";
 
 body {
   overflow: hidden;
@@ -16,7 +16,7 @@ body {
 
 .nav-bar {
     width: 100%;
-    background-color: #555;
+    background-color: $grey;
     bottom: 0;
     position: absolute;
 }
@@ -34,5 +34,5 @@ body {
 }
 
 .active {
-    background-color: $color-yellow;
+    background-color: $yellow;
 }
