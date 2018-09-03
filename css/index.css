@@ -1,3 +1,6 @@
+body {
+  overflow: hidden; }
+
 .pollen-count {
   width: 20%;
   height: 50%; }

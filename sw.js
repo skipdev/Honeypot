@@ -17,6 +17,7 @@ var filesToCache = [
 
   // app files ---------------------------------------------------------------------------------------------------------
   'page2.html',
+  'css/index.css',
   'css/styles.css',
   'img/header.jpg',
   'img/offline-img.png',
