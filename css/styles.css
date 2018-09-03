@@ -1,33 +1,75 @@
-.body-font{
-  font-family: 'Raleway', sans-serif;
-}
-.centered-img{
+.body-font {
+  font-family: 'Raleway', sans-serif; }
+
+.center-img {
   display: block;
   width: 100%;
-  margin: auto;
-}
-.offline{
-  width: 100%;
-}
-@media (min-width: 720px){
-  .centered-img{
-    width: 50% !important;
-  }
-  .offline{
-    width: 50% !important;
-  }
-}
-.centered-text{
-  text-align: center;
-}
-.full-width{
-  width: 100%;
-}
-.right-text{
-  text-align: right;
-}
-.paragraph{
-  padding-top: 15px;
-  text-align: center;
-}
+  margin: auto; }
 
+.offline {
+  width: 100%; }
+
+@media (min-width: 720px) {
+  .center-img {
+    width: 50% !important; }
+  .offline {
+    width: 50% !important; } }
+
+.center {
+  text-align: center; }
+
+.full-width {
+  width: 100%; }
+
+.left {
+  text-align: left; }
+
+.right {
+  text-align: right; }
+
+.paragraph {
+  padding-top: 15px;
+  text-align: center; }
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden; }
+
+.column {
+  flex-direction: column; }
+
+.row {
+  flex-direction: row; }
+
+/*flex order*/
+.one {
+  order: 1; }
+
+.two {
+  order: 2; }
+
+.three {
+  order: 3; }
+
+.four {
+  order: 4; }
+
+.five {
+  order: 5; }
+
+.six {
+  order: 6; }
+
+.seven {
+  order: 7; }
+
+.eight {
+  order: 8; }
+
+.nine {
+  order: 9; }
+
+.ten {
+  order: 10; }
