@@ -1,6 +1,6 @@
 body {
-  overflow: hidden;
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  overflow: hidden; }
 
 .pollen-count {
   width: 20%;
