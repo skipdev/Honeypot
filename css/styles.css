@@ -31,12 +31,6 @@ body {
   color: #e2e2e2;
   font-size: 36px; }
 
-.nav-bar a:hover {
-  background-color: black; }
-
-.active {
-  background-color: #FADC4B; }
-
 .body-font {
   font-family: 'Raleway', sans-serif; }
 
