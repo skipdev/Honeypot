@@ -1,48 +1,12 @@
-@import "variables.scss";
+@import "variables";
 
-.popup {
-    display: flex;
-    justify-content: center;
-    visibility: hidden;
-    position: relative;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-/* The actual popup */
-.popup .popuptext {
-    visibility: hidden;
-    width: 90%;
-    height: 70vh;
-    margin-top: 15vh;
+.donate-popup .donate-popuptext {
     background-color: $grey;
-    color: white;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: fixed;
-    z-index: 1;
+    color: $white;
 }
 
-/* Popup arrow */
-.popup .popuptext::after {
-    visibility: hidden;
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: $grey transparent transparent transparent;
-}
-
-/* Toggle this class - hide and show the popup */
-.popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
+.donate-coins, .donate-repeat {
+    width: 25%;
+    margin-bottom: 25%;
+    margin-left: 10%;
 }

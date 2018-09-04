@@ -2,26 +2,30 @@
 
 body {
   font-family: 'Raleway', sans-serif;
+  color: $white;
   overflow: hidden;
+  background: url("../img/background.png");
+}
+
+.header {
+  max-height: 6vh;
+  margin-left: 8%;
+  margin-right: 8%;
+  justify-content: space-between;
 }
 
 .hidden {
   display: none;
 }
 
-.pollen-count {
-  width: 20%;
-  height: 50%;
-}
-
-.donate-button {
-  width: 20%;
-  height: 50%;
+.pollen-count, .donate-button {
+  height: 6vh;
 }
 
 .nav-bar {
   width: 100%;
-  background-color: $grey;
+  border-radius: 3%;
+  background-color: $white;
   bottom: 0;
   left: 0;
   position: absolute;
@@ -31,12 +35,12 @@ body {
   width: 20%;
   padding: 12px 0;
   transition: all 0.3s ease;
-  color: white;
+  color: $grey;
   font-size: 36px;
 }
 
 .nav-bar a:hover {
-  background-color: black;
+  background-color: $black;
 }
 
 .active {

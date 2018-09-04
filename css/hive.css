@@ -5,3 +5,14 @@
 
 .arrow {
   width: 20%; }
+
+.profile_pic {
+  width: 50%;
+  margin-top: 20%; }
+
+.tinder {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 2%;
+  align-self: center;
+  margin-top: 10%;
+  height: 70vh; }

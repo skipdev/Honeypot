@@ -1,5 +1,5 @@
 ---
-title: Profile
+bee_name: Buzzi
 ---
 
 <!doctype html>
@@ -15,12 +15,13 @@ title: Profile
           {% include pollen_donate_imgs.html %}
       </div>
     <br/>
-    <h1 class="center two">
-        {{ page.title }}
+    <h1 class="center three">
+        {{ page.bee_name }}
     </h1>
-    <img class="profile_pic three center-img" src="img/profile_pic.png">
+    <img class="profile_pic two center-img" src="img/profile_pic.png">
     <script src="sw.js" type="text/javascript"></script>
       {% include donate-popup.html %}
+      {% include leaderboard-popup.html %}
       <div class="nav-bar flex six center">
           {% include navigation.html %}
       </div>
