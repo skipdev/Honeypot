@@ -2,6 +2,9 @@ body {
   font-family: 'Raleway', sans-serif;
   overflow: hidden; }
 
+.hidden {
+  display: none; }
+
 .pollen-count {
   width: 20%;
   height: 50%; }
@@ -26,9 +29,6 @@ body {
 
 .nav-bar a:hover {
   background-color: black; }
-
-.active {
-  background-color: #FADC4B; }
 
 .body-font {
   font-family: 'Raleway', sans-serif; }
