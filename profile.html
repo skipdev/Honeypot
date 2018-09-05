@@ -1,5 +1,9 @@
 ---
 bee_name: Buzzi
+bee_occupation: Queen Bee
+leaderboard_pos: 1
+pollen_earned: 270
+pollen_left: 230
 ---
 
 <!doctype html>
@@ -10,15 +14,26 @@ bee_name: Buzzi
   </head>
 
   <body class="body-font">
+  {% include white-top.html %}
   <div class="main flex column">
       <div class="header flex row one">
-          {% include pollen_donate_imgs.html %}
+          {% include pollen_donate_imgs-orange.html %}
       </div>
     <br/>
     <h1 class="center three">
-        {{ page.bee_name }}
+        <p class="bee_name one bold large-font">{{ page.bee_name }}</p>
+        <p class="leaderboad_pos two almost_large-font">#{{ page.leaderboard_pos }}</p>
+        <br>
+        <div class="stats flex column small-font">
+            <span class="one">Level: {{ page.bee_occupation }}</span>
+            <span class="two">Pollen earned: {{ page.pollen_earned }}</span>
+            <span class="three">You need {{ page.pollen_left }} pollen to level up!</span>
+        </div>
     </h1>
-    <img class="profile_pic two center-img" src="img/profile_pic.png">
+      <div class="gold_member_profile two flex">
+        <img class="gold_border two center-img" src="img/gold_member.png">
+        <img class="profile_pic one center-img" src="img/profile_pic.png">
+      </div>
     <script src="sw.js" type="text/javascript"></script>
       {% include donate-popup.html %}
       {% include leaderboard-popup.html %}

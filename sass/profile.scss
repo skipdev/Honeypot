@@ -1,6 +1,33 @@
 @import "variables";
 
+.gold_member_profile {
+  min-height: 30vh;
+  justify-content: center;
+}
+
 .profile_pic {
     width: 50%;
     margin-top: 5%;
+}
+
+.gold_border {
+  width: 100%;
+  margin-top: 3.5%;
+  position: absolute;
+}
+
+.bee_name {
+  margin-top: 5px;
+}
+
+.leaderboad_pos {
+  margin-top: -5%;
+}
+
+.stats {
+  align-content: flex-start;
+}
+
+.stats span {
+  margin-top: 4%;
 }

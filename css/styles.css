@@ -4,6 +4,19 @@ body {
   overflow: hidden;
   background: url("../img/background.png"); }
 
+.white-bg {
+  background-color: white;
+  z-index: -1;
+  top: -2%;
+  left: -1%;
+  position: fixed;
+  height: 28vh;
+  width: 101vw;
+  border-radius: 10%; }
+
+.orange-text {
+  color: #EF8766; }
+
 .header {
   max-height: 6vh;
   margin-left: 8%;
@@ -12,6 +25,24 @@ body {
 
 .hidden {
   display: none; }
+
+.underlined {
+  text-decoration: underline; }
+
+.bold {
+  font-weight: bold; }
+
+.large-font {
+  font-size: 38px; }
+
+.almost_large-font {
+  font-size: 32px; }
+
+.medium-font {
+  font-size: 20px; }
+
+.small-font {
+  font-size: 15px; }
 
 .pollen-count, .donate-button {
   height: 6vh; }
