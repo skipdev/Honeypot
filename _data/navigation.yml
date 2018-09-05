@@ -1,10 +1,10 @@
 - name: <i class="fa fa-user-circle"></i>
-  link: profile.html
+  url: profile.html
 - name: <i class="fa fa-connectdevelop"></i>
-  link: hive.html
+  url: hive.html
 - name: <i class="fa fa-shopping-bag"></i>
-  link: shop.html
+  url: shop.html
 - name: <i class="fa fa-info"></i>
-  link: info.html
+  url: info.html
 - name: <i class="fa fa-comments"></i>
-  link: chat.html
+  url: chat.html

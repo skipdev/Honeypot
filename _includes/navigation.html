@@ -1,5 +1,6 @@
+{% assign current = page.url | downcase | split: '/' %}
 {% for item in site.data.navigation %}
-<a href="{{ item.link }}" {% if page.url == item.link %} style="color: #EF8766;" {% endif %}>
+    <a href="{{ item.url }}" {% if current[1] == item.url %} style="color: #EF8766;"{% endif %}>
     {{ item.name }}
 </a>
 {% endfor %}
