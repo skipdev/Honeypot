@@ -8,38 +8,67 @@ pollen_left: 230
 
 <!doctype html>
 <html lang="en">
-  <head>
-      {% include header.html %}
-      <link rel="stylesheet" href="css/profile.css" type="text/css">
-  </head>
+<head>
+    {% include header.html %}
+    <link rel="stylesheet" href="css/profile.css" type="text/css">
+    <link href="css/tox-progress.css" rel="stylesheet">
+    <script src="js/tox-progress.js"></script>
 
-  <body class="body-font">
-  {% include white-top.html %}
-  <div class="main flex column">
-      <div class="header flex row one">
-          {% include pollen_donate_imgs-orange.html %}
-      </div>
+</head>
+
+<body class="body-font">
+{% include white-top.html %}
+<div class="main flex column">
+    <div class="header flex row one">
+        {% include pollen_donate_imgs-orange.html %}
+    </div>
     <br/>
-    <h1 class="center three">
+    <div class="center three flex column">
         <p class="bee_name one bold large-font">{{ page.bee_name }}</p>
-        <p class="leaderboad_pos two almost_large-font">#{{ page.leaderboard_pos }}</p>
+        <p class="leaderboad_pos two almost_large-font">#{{ page.leaderboard_pos }}  |  {{ page.bee_occupation }}</p>
+        <!--<p class="leaderboad_pos two almost_large-font">Rank: {{ page.bee_occupation }}</p>-->
         <br>
-        <div class="stats flex column small-font">
-            <span class="one">Level: {{ page.bee_occupation }}</span>
-            <span class="two">Pollen earned: {{ page.pollen_earned }}</span>
-            <span class="three">You need {{ page.pollen_left }} pollen to level up!</span>
+        <div class="stats three flex row small-font">
+            <div class="one flex column level-pollen-text">
+                <!--<span class="one">{{ page.bee_occupation }}</span>-->
+                <img
+                        src="data:image/png;base64,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"
+                        class="pollen-count one"
+                />
+                <span class="two bold medium-font">{{ page.pollen_earned }}</span>
+            </div>
+            <span class="two progress-bar">
+                <div class="tox-progress"
+                     data-size="100"
+                     data-thickness="12"
+                     data-color="#ffffff"
+                     data-background="#EF8766"
+                     data-progress="60"
+                     data-speed="500">
+                    <div class="tox-progress-content" data-vcenter="true">
+                    <div class="text-center" style="width: 100%">
+                    <p class="text-center">{{ page.pollen_left }} to go!</p>
+                        <script>
+                            ToxProgress.create();
+                            ToxProgress.animate();
+                        </script>
+                    </div>
+                    </div>
+                </div>
+            </span>
         </div>
-    </h1>
-      <div class="gold_member_profile two flex">
+        <span class="pollen-count-remaining four small-font">You need 500 pollen to level up!</span>
+    </div>
+    <div class="gold_member_profile two flex">
         <img class="gold_border two center-img" src="img/gold_member.png">
         <img class="profile_pic one center-img" src="img/profile_pic.png">
-      </div>
+    </div>
     <script src="sw.js" type="text/javascript"></script>
-      {% include donate-popup.html %}
-      {% include leaderboard-popup.html %}
-      <div class="nav-bar flex six center">
-          {% include navigation.html %}
-      </div>
-  </div>
-  </body>
+    {% include donate-popup.html %}
+    {% include leaderboard-popup.html %}
+    <div class="nav-bar flex six center">
+        {% include navigation.html %}
+    </div>
+</div>
+</body>
 </html>

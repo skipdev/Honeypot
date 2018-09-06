@@ -11,6 +11,9 @@ pollen_left: 230
 <head>
     {% include header.html %}
     <link rel="stylesheet" href="css/profile.css" type="text/css">
+    <link href="css/tox-progress.css" rel="stylesheet">
+    <script src="js/tox-progress.js"></script>
+
 </head>
 
 <body class="body-font">
@@ -20,16 +23,38 @@ pollen_left: 230
         {% include pollen_donate_imgs-orange.html %}
     </div>
     <br/>
-    <h1 class="center three">
+    <div class="center three flex column">
         <p class="bee_name one bold large-font">{{ page.bee_name }}</p>
-        <p class="leaderboad_pos two almost_large-font">#{{ page.leaderboard_pos }}</p>
+        <p class="leaderboad_pos two almost_large-font">#{{ page.leaderboard_pos }}  |  {{ page.bee_occupation }}</p>
+        <!--<p class="leaderboad_pos two almost_large-font">Rank: {{ page.bee_occupation }}</p>-->
         <br>
-        <div class="stats flex column small-font">
-            <span class="one">Level: {{ page.bee_occupation }}</span>
-            <span class="two">Pollen earned: {{ page.pollen_earned }}</span>
-            <span class="three">You need {{ page.pollen_left }} pollen to level up!</span>
+        <div class="stats three flex row small-font">
+            <div class="one flex column level-pollen-text">
+                <!--<span class="one">{{ page.bee_occupation }}</span>-->
+                <span class="two">Pollen earned: {{ page.pollen_earned }}</span>
+            </div>
+            <span class="two progress-bar">
+                <div class="tox-progress"
+                    data-size="100"
+                    data-thickness="12"
+                    data-color="#ffffff"
+                    data-background="#EF8766"
+                    data-progress="60"
+                    data-speed="500">
+                    <div class="tox-progress-content" data-vcenter="true">
+                    <div class="text-center" style="width: 100%">
+                    <p class="text-center">{{ page.pollen_left }} to go!</p>
+                        <script>
+                            ToxProgress.create();
+                            ToxProgress.animate();
+                        </script>
+                    </div>
+                    </div>
+                </div>
+            </span>
         </div>
-    </h1>
+        <span class="pollen-count-remaining four small-font">You need 500 pollen to level up!</span>
+    </div>
     <div class="gold_member_profile two flex">
         <img class="gold_border two center-img" src="img/gold_member.png">
         <img class="profile_pic one center-img" src="img/profile_pic.png">
