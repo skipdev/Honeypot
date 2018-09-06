@@ -1,9 +1,13 @@
 function toggleDonatePopup() {
-   const popup = document.getElementById("donatePopup");
-   popup.classList.toggle("show");
+   const donate = document.getElementById("donatePopup");
+   const leaderboard = document.getElementById("leaderboardPopup");
+   donate.classList.toggle("show");
+   leaderboard.classList.remove("show");
 }
 
 function toggleLeaderboardPopup() {
-   const popup = document.getElementById("leaderboardPopup");
-   popup.classList.toggle("show");
+   const donate = document.getElementById("donatePopup");
+   const leaderboard = document.getElementById("leaderboardPopup");
+   donate.classList.remove("show");
+   leaderboard.classList.toggle("show");
 }
